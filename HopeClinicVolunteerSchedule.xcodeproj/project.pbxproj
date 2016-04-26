@@ -13,6 +13,13 @@
 		8419E7BA1CCAEA3600D3C8DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8419E7B91CCAEA3600D3C8DF /* Assets.xcassets */; };
 		8419E7BD1CCAEA3600D3C8DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8419E7BB1CCAEA3600D3C8DF /* LaunchScreen.storyboard */; };
 		8419E7C81CCAEA3600D3C8DF /* HopeClinicVolunteerScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419E7C71CCAEA3600D3C8DF /* HopeClinicVolunteerScheduleTests.swift */; };
+		8419E7D31CCAF1F000D3C8DF /* Clinic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419E7D21CCAF1F000D3C8DF /* Clinic.swift */; };
+		8419E7D41CCAF1F000D3C8DF /* Clinic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419E7D21CCAF1F000D3C8DF /* Clinic.swift */; };
+		8419E7D61CCB340300D3C8DF /* ClinicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419E7D51CCB340300D3C8DF /* ClinicTableViewCell.swift */; };
+		8419E7D71CCB340300D3C8DF /* ClinicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419E7D51CCB340300D3C8DF /* ClinicTableViewCell.swift */; };
+		8419E7D91CCB3C6F00D3C8DF /* ClinicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419E7D81CCB3C6F00D3C8DF /* ClinicTableViewController.swift */; };
+		8419E7DB1CCC002900D3C8DF /* AssignmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419E7DA1CCC002900D3C8DF /* AssignmentControl.swift */; };
+		8419E7DF1CCC57F700D3C8DF /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419E7DE1CCC57F700D3C8DF /* HeaderTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,11 @@
 		8419E7C31CCAEA3600D3C8DF /* HopeClinicVolunteerScheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopeClinicVolunteerScheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8419E7C71CCAEA3600D3C8DF /* HopeClinicVolunteerScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopeClinicVolunteerScheduleTests.swift; sourceTree = "<group>"; };
 		8419E7C91CCAEA3600D3C8DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8419E7D21CCAF1F000D3C8DF /* Clinic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clinic.swift; sourceTree = "<group>"; };
+		8419E7D51CCB340300D3C8DF /* ClinicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicTableViewCell.swift; sourceTree = "<group>"; };
+		8419E7D81CCB3C6F00D3C8DF /* ClinicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicTableViewController.swift; sourceTree = "<group>"; };
+		8419E7DA1CCC002900D3C8DF /* AssignmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentControl.swift; sourceTree = "<group>"; };
+		8419E7DE1CCC57F700D3C8DF /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +91,12 @@
 			children = (
 				8419E7B21CCAEA3600D3C8DF /* AppDelegate.swift */,
 				8419E7B41CCAEA3600D3C8DF /* ViewController.swift */,
+				8419E7D81CCB3C6F00D3C8DF /* ClinicTableViewController.swift */,
 				8419E7B61CCAEA3600D3C8DF /* Main.storyboard */,
+				8419E7DA1CCC002900D3C8DF /* AssignmentControl.swift */,
+				8419E7DE1CCC57F700D3C8DF /* HeaderTableViewCell.swift */,
+				8419E7D51CCB340300D3C8DF /* ClinicTableViewCell.swift */,
+				8419E7D21CCAF1F000D3C8DF /* Clinic.swift */,
 				8419E7B91CCAEA3600D3C8DF /* Assets.xcassets */,
 				8419E7BB1CCAEA3600D3C8DF /* LaunchScreen.storyboard */,
 				8419E7BE1CCAEA3600D3C8DF /* Info.plist */,
@@ -199,6 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8419E7D31CCAF1F000D3C8DF /* Clinic.swift in Sources */,
+				8419E7D61CCB340300D3C8DF /* ClinicTableViewCell.swift in Sources */,
+				8419E7DB1CCC002900D3C8DF /* AssignmentControl.swift in Sources */,
+				8419E7DF1CCC57F700D3C8DF /* HeaderTableViewCell.swift in Sources */,
+				8419E7D91CCB3C6F00D3C8DF /* ClinicTableViewController.swift in Sources */,
 				8419E7B51CCAEA3600D3C8DF /* ViewController.swift in Sources */,
 				8419E7B31CCAEA3600D3C8DF /* AppDelegate.swift in Sources */,
 			);
@@ -209,6 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8419E7C81CCAEA3600D3C8DF /* HopeClinicVolunteerScheduleTests.swift in Sources */,
+				8419E7D71CCB340300D3C8DF /* ClinicTableViewCell.swift in Sources */,
+				8419E7D41CCAF1F000D3C8DF /* Clinic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

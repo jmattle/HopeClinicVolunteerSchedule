@@ -10,6 +10,12 @@ import UIKit
 
 class ClinicTableViewCell: UITableViewCell {
 
+    // MARK: Properties
+    @IBOutlet weak var dateOfClinic: UILabel!
+    @IBOutlet weak var nameOfClinic: UILabel!
+    @IBOutlet weak var nameOfAssigned: AssignmentControl!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

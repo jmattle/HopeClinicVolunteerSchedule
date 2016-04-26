@@ -1,13 +1,114 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kro-28-tEs">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Hope Clinic Volunteer Schedule-->
+        <scene sceneID="c2Q-ih-Uba">
+            <objects>
+                <tableViewController id="m74-kc-qM7" customClass="ClinicTableViewController" customModule="HopeClinicVolunteerSchedule" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="86" sectionHeaderHeight="18" sectionFooterHeight="18" id="x4b-3j-zQL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HeaderTableViewCell" id="YtE-Wn-zBf" userLabel="HeaderTableViewCell" customClass="HeaderTableViewCell" customModule="HopeClinicVolunteerSchedule">
+                                <rect key="frame" x="0.0" y="114" width="600" height="86"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YtE-Wn-zBf" id="jlj-FF-bk4">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="85"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="584" placeholderIntrinsicHeight="50" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="n4D-z7-87f">
+                                            <rect key="frame" x="8" y="18" width="584" height="50"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Specialty Clinic" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPB-b7-Mb8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="292" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Assigned" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKL-xo-ZWK">
+                                                    <rect key="frame" x="292" y="0.0" width="292" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="n4D-z7-87f" firstAttribute="centerX" secondItem="jlj-FF-bk4" secondAttribute="centerX" id="WjC-FZ-BQC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="assignedHeader" destination="qKL-xo-ZWK" id="RcE-Op-yoL"/>
+                                    <outlet property="clinicHeader" destination="OPB-b7-Mb8" id="ItN-Ku-Icj"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="144" selectionStyle="none" indentationWidth="10" reuseIdentifier="ClinicTableViewCell" rowHeight="144" id="Fwf-us-M1f" customClass="ClinicTableViewCell" customModule="HopeClinicVolunteerSchedule" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="200" width="600" height="144"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="85" tableViewCell="Fwf-us-M1f" id="pih-ZX-DK7">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="143"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z6b-wO-sai">
+                                            <rect key="frame" x="8" y="8" width="294" height="100"/>
+                                            <subviews>
+                                                <view userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4yH-Wc-NII" customClass="UILabel">
+                                                    <rect key="frame" x="0.0" y="0.0" width="294" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                    </accessibility>
+                                                </view>
+                                                <view userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jn8-97-BEK" customClass="UILabel">
+                                                    <rect key="frame" x="0.0" y="50" width="294" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <variation key="heightClass=compact" spacing="0.0"/>
+                                        </stackView>
+                                        <view contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bwf-Sn-bVF" customClass="AssignmentControl" customModule="HopeClinicVolunteerSchedule" customModuleProvider="target">
+                                            <rect key="frame" x="302" y="25" width="290" height="50"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="bwf-Sn-bVF" firstAttribute="centerX" secondItem="pih-ZX-DK7" secondAttribute="centerX" constant="135" id="YLH-0W-h7q"/>
+                                        <constraint firstItem="bwf-Sn-bVF" firstAttribute="centerY" secondItem="pih-ZX-DK7" secondAttribute="centerY" id="YY1-4y-sSF"/>
+                                        <constraint firstItem="z6b-wO-sai" firstAttribute="leading" secondItem="pih-ZX-DK7" secondAttribute="leadingMargin" constant="5" id="ZvL-6t-JwT"/>
+                                        <constraint firstItem="z6b-wO-sai" firstAttribute="centerY" secondItem="pih-ZX-DK7" secondAttribute="centerY" id="qGa-Vi-56L"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateOfClinic" destination="4yH-Wc-NII" id="51T-l9-QwW"/>
+                                    <outlet property="nameOfAssigned" destination="bwf-Sn-bVF" id="0kS-nB-Tit"/>
+                                    <outlet property="nameOfClinic" destination="Jn8-97-BEK" id="pWK-db-E4t"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="m74-kc-qM7" id="7Xb-tf-1pJ"/>
+                            <outlet property="delegate" destination="m74-kc-qM7" id="HQm-2w-HMX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Hope Clinic Volunteer Schedule" id="q4Z-2j-QGd"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p9g-GJ-VHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="443"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HopeClinicVolunteerSchedule" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,6 +121,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1117" y="340"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rSf-S1-RYH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kro-28-tEs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4If-Fq-y25">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="m74-kc-qM7" kind="relationship" relationship="rootViewController" id="yxi-cV-EPb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ls-kW-VgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-426" y="443"/>
         </scene>
     </scenes>
 </document>
